@@ -22,6 +22,7 @@
 #     def __init__(self, name, id):
 #         self.name = name
 #         self.id = id
+#         self.__fame = "berry" #indirect accessible
 #     name ="abc"
 #     id = "230"
 
@@ -35,7 +36,8 @@
 # a = programmer("Harry_potter", 7989)
 # a.showlang()
 # a.show()
+# # 2. access modifier
+# print(a.__dir__())
 
-        
 
-# 2. access modifier
+# new topic
