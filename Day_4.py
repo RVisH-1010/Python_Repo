@@ -1,4 +1,4 @@
-print("starting of day 4!!!")
+# print("starting of day 4!!!")
 # 1. topic: super keyword
 # class employee:
 #     def __init__(self, name, id):
@@ -60,3 +60,42 @@ print("starting of day 4!!!")
 
 
 # operator overloading
+# print("operator overloading")
+# class vector:
+#     def __init__(self, i ,j ,k):
+#         self.i = i
+#         self.j = j
+#         self.k = k 
+#     def __str__(self):
+#         return f"{self.i}i+{self.j}j+{self.k}k"
+#     def __add__(self,x):
+#         return vector(self.i+x.i,self.j+x.j,self.k+x.k)
+    
+# v1 = vector(1,2,8)
+# print(v1)
+# v2 = vector(2,3,4)
+# print(v2) 
+# print(v1+v2)
+# print(type(v1+v2))   
+
+
+
+# 4. single inheritance in py
+class animal:
+    def __init__(self,name, species):
+        self.name = name 
+        self.species = species
+    def make_sound(self):
+        print(f"sound made by {self.name}")
+
+class cat(animal):
+    def __init__(self, name, color):
+        animal.__init__(self, name, species = "cat")            
+        self.color = color
+    def make_sound(self):
+        print("Meow")
+
+c = cat("cat","balck")
+a = animal("bird", "bird")
+print(a.make_sound())
+print(c.make_sound())
