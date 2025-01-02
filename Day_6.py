@@ -51,6 +51,29 @@
     
 
 # 3.shutil module
-import shutil
+# import shutil
+# import os
+# shutil.copy("index.html","main.py")
+# os.remove("main.py")
 
-shutil.copy("index.html","main.py")
+# os.remove("xyz.py")
+
+
+# text to speak
+# 4. request module
+import requests
+# response = requests.get("https://www.instagram.com")
+
+url = "https://jsonplaceholder.typeicode.com/posts"
+data ={
+    "title" : 'Rohan',
+    'body' : 'bodypower',
+    "userid": '6578',
+}
+headers = {
+    'content-type' : 'application/json';
+charset=UTF-8',
+}
+response = requests.post(url,headers = headers,json = data)
+
+print(response.text)
