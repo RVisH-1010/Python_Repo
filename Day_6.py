@@ -53,4 +53,4 @@
 # 3.shutil module
 import shutil
 
-shutil.copy("action.py","main.py")
+shutil.copy("index.html","main.py")
