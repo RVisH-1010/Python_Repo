@@ -3,8 +3,9 @@ print("day 6 of py tut...")
 import argparse
 import requests
 
-def download_file(url):
-    local_filename = url.split('/')[-1]
+def download_file(url, local_filenmae):
+    if local_filename == "None":
+        local_filename = url.split('/')[-1]
     # NOTE the stream=True parameter below
     with requests.get(url, stream=True) as r:
         r.raise_for_status()
