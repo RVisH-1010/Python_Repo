@@ -47,5 +47,24 @@
 
 
 
-# 
+# 3. REGULAR EXPRESSIONS IN PYTHON
+import re 
+
+pattern = r"[A-Z]+orn"
+text = '''Born and raised in the Austrian Empire, Tesla first 
+studied engineering and physics in the 1870s without receiving 
+a degree. He then gained practical experience in the early 1880s 
+working in telephony and at Continental Edison in the new electric
+power industry. In 1884 he immigrated to the United States, where he 
+became a naturalized citizen. He worked for a short time at the
+Edison Machine Works in New York City before he struck out on 
+his own. With the help of partners to finance and market his ideas,
+Tesla set up laboratories and companies in New York to develop a 
+range of electrical and mechanical devices. His AC induction motor
+and related polyphase AC patents, licensed by Westinghouse Electric in 1888,
+earned him a considerable amount of money and became the cornerstone 
+of the polyphase system which that company eventually marketed.
+'''
+match = re.search(pattern,text)
+print(match)
 
